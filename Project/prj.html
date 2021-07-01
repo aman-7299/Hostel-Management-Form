@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+    <title>Hostel Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <h1 align ="center">Welcome to Chandigarh University Hostel </h1>
+    <form action ="myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="form" id="name">
+            Student Name: <input type="text" name="sname" required><span class="formerror"> </span></b>
+        </div>
+        
+        <div class="form" id="u_id">
+            University ID: <input type="text" name="u_id" required><span class="formerror"> </span></b>
+        </div>
+
+        <div class="form" id="email">
+            Student Email: <input type="email" name="semail" required>
+        </div>
+
+        <div class="form" id="phone">
+            Phone number: <input type="phone" name="sphone" required><span class="formerror"> </span></b>
+        </div>
+
+        <div class="form" id="phone">
+           Alternative Phone number: <input type="phone" name="aphone" ><span class="formerror"> </span></b>
+        </div>
+
+        <h2> Your Hostel Preference:</h2> 
+
+        <div class="form" id="LC">
+            LC <input type="radio" name="Preference" value="LC" required>
+        </div>
+
+        <div class="form" id="Nek chand">
+          Nek Chand <input type="radio" name="Preference" value="Nek Chand" required>
+        </div>
+
+        <div class="form" id="Zakir">
+            Zakir <input type="radio" name="Preference" value="Zakir" required>
+        </div>
+
+        <h2> Your Seater preference:</h2>
+
+        <div class="form" id="3">
+           3<input type="radio" name="Seater" value="3" required>
+        </div>
+
+        <div class="form" id="4">
+            4<input type="radio" name="Seater" value="4" required>
+        </div>
+
+        <div class="form" id="5">
+            5<input type="radio" name="Seater" value="5" required>
+        </div>
+        
+
+        <input class="submit" name="submit" type="submit" value="Submit">
+
+        <script src="prj.js"></script>
+
+    </form>
+</body>
+
+</html>
